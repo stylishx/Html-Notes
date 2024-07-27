@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style-type: '😁';
+            list-style-image: url();
+        }
+
+        #ull {
+            list-style-image: url(../Assest/instaicon.jpg);
+        }
+    </style>
+</head>
+<body>
+    <!-- First for order list that is ol tag inside it we have li tag-->
+     <ol type="1" start="4" reversed>
+        <li>India</li>
+        <li>USA</li>
+        <li>China</li>
+        <li>Japan</li>
+     </ol>
+
+
+    <!--second one is unorder list in that we get bullets and all we cant use start because it is unorder list
+    we use to change bullet point to another shape like circle and square we caannot use type attribute in ul tag
+    we use internal or external css for that
+    
+    
+    -->
+     <ul>
+        <li>rowmen</li>
+        <li>dr.stone</li>
+        <li>kaisen</li>
+        <li>Zenku</li>
+     </ul>
+
+
+     <!-- next one is description list  in tag we have dl tag  inside that dt tag and dd tag   -->
+
+     <dl>
+        <dt> Core JAVA</dt>
+        <dd>So core java is a programming languages which is object oriented </dd>
+     </dl>
+
+     <!-- last one is nested list means we can provideo all the list inside it make another list liked nested -->
+      <ul id="ull">
+        <li>Java Full Stack</li>
+        <ul>
+            <li>CORE JAVA</li>
+            <dl>
+                <dt>Core Java</dt>
+                <dd>core java is a object oriented language </dd>
+            </dl>
+        </ul>
+
+        <ul>
+            <li>SQL</li>
+
+            <dl>
+                <dt>Sql</dt>
+                <dd>Sql is a structure Query language</dd>
+            </dl>
+        </ul>
+        <ul>
+            <li>ADVANCED JAVA</li>
+
+            <dl>
+                <dt>advanced java</dt>
+                <dd>Advanaced java use j2EE concept and also use for backend development</dd>
+            </dl>
+        </ul>
+      </ul>
+
+</body>
+</html>
