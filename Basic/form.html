@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        label {
+            font-weight: bold;
+            font-size: 25px;
+        }
+    </style>
 </head>
 <body>
     <form action="">
@@ -18,6 +24,65 @@
     <input type="tel" id="phoneno"><br><br>
     <label for="company">Company name</label><br><br>
     <input type="text" value="Accenture"><br><br>
+    <label for="company">Company name</label><br><br>
+    <input type="text" value="Accenture" readonly><br><br>
+    <!--readonly attribute will make value only readable not eidt we can do-->
+    <label for="">Enter your password</label><br><br>
+    <!--we also have required attribute which will make sure the input field should be filled if we dont give any input it
+    it will show the popup required field-->
+    <input type="password"><br><br>
+
+    
+    <input type="file"><br><br>
+
+    <label for=""> choose color</label><br><br>
+    <input type="color"><br><br>
+
+    <label for="">URL OF GITHUB</label><br><br>
+    <input type="url"><br><br><br>
+
+    <label for="">Rating</label><br><br>
+    <input type="range"><br><br><br>
+
+    <label for="">Enter OTP</label><br><br>
+    <input type="hidden" value="1234" name="otp"><br><br><br>
+
+    <label for="">Select today time</label><br><br>
+    <input type="time"><br><br><br>
+
+    <label for="">Image</label><br><br>
+    <input type="image"><br><br><br><!--it is also work like a link for submit form to server-->
+
+    <label for="">Select date</label><br><br>
+    <input type="date"><br><br>
+
+    <label for="">datetime</label><br><br>
+    <input type="datetime"><br><br><br>
+
+    <label for="">date time local</label><br><br>
+    <input type="datetime-local"><br><br>
+    
+
+    <label for="">Select subject</label><br><br>
+    <input type="radio" name="gender" disabled>java<br><br>
+    <input type="radio" name="gender">sql<br><br>
+    <input type="radio" name="gender">html,css<br><br>
+    <!-- we use same name value for the radio button to select only one value -->
+     <!-- disable attribute will disable that input field-->
+
+
+     <label for="">Select course</label><br><br>
+     <input type="checkbox">B.E<br><br>
+     <input type="checkbox">B.TECH<br><br>
+     <input type="checkbox">BSC.IT<br><br><br><br>
+
+     <video src="../Assest/0626 (1).mp4" controls style="height: 150px; width: 150px;"></video><br><br><br>
+
+    
+
+
+    <input type="button">submit button <br><br>
+
 
 
     <input type="reset">
