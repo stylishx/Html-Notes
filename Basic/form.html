@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+            margin-left: 200px;
+        }
         label {
             font-weight: bold;
             font-size: 25px;
         }
+
     </style>
 </head>
 <body>
+    
     <form action="">
         <fieldset>
     
@@ -76,9 +81,54 @@
      <input type="checkbox">B.TECH<br><br>
      <input type="checkbox">BSC.IT<br><br><br><br>
 
-     <video src="../Assest/0626 (1).mp4" controls style="height: 150px; width: 150px;"></video><br><br><br>
+     <video src="../Assest/0626 (1).mp4" controls style="height: 150px; width: 150px;"></video><br><br><br><br><br><br>
 
-    
+     <label for="">Search field</label><br><br>
+     <input type="search"><br><br><br>
+     <label for="">Select the week</label><br><br>
+     <input type="week"><br><br><br>
+
+     <label for="select">Select one option</label><br><br>
+     <select name="select" id="select">
+        
+        <optgroup label="Languages" >
+            
+            <option value="html">html</option>
+            <option value="css">css</option>
+            <option value="js">js</option>
+        </optgroup>
+     </select><br><br><br>
+
+     <label for="select">Select one option</label><br><br>
+     <select name="select" id="select" multiple size="2">
+        <!--multiple attribute use to select multiple value in the drop down box
+        size is use to give the option size like i have given 2 contnent in that and make other as like range -->
+        
+        <optgroup label="Languages" >
+            
+            <option value="html">html</option>
+            <option value="css">css</option>
+            <option value="js">js</option>
+        </optgroup>
+     </select><br><br><br>
+
+     <label for="">select an option</label><br><br>
+     <input type="text" name="" id="" list="list1">
+     <datalist id="list1">
+            <option value="html">html</option>
+            <option value="css">css</option>
+            <option value="js">js</option>
+        
+     </datalist><br><br><br>
+
+     <label for="">enter the age</label><br><br>
+     <input type="number" ><br><br><br>
+
+     <label for="">enter the age</label><br><br>
+     <input type="number" min="18" max="50" step="3"><br><br><br>
+
+     <!-- to start with age above 18 we use min attribute in input and till 50 we use max attribute 
+      and we get value in frequency of multile of 3 then we use step attributes-->
 
 
     <input type="button">submit button <br><br>
