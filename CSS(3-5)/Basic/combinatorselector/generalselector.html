@@ -5,15 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        /* it will whatever tag we provide after div it only select only one p tag it cannot select grand child also */
-        div+p {
-            background-color: blueviolet;
-        }
-        #afterpre+p {
-            background-color: blueviolet;
-        }
-        #aftergrandc+p {
-            background-color: blueviolet;
+        div~p{
+            background-color: brown;
         }
     </style>
 </head>
@@ -27,25 +20,24 @@
     <p>hello2</p>
     <p>hello3</p> 
 
-    <div id="afterpre">
+    <div>
         <p>first child</p>
         <p>second child</p>
         <p>third child</p>
     </div>
-    <pre>hello</pre>
+    <pre>helo</pre>
     <p>hello1</p>
     <p>hello2</p>
     <p>hello3</p> 
 
-    <div id="aftergrandc">
+    <div>
         <p>first child</p>
         <p>second child</p>
         <p>third child</p>
     </div>
-    <p>hello1 <p>hello i am grandchild</p></p>
+    <p>hello1 <p>i am grand child</p>
+    </p>
     <p>hello2</p>
     <p>hello3</p> 
-
-    
 </body>
 </html>
