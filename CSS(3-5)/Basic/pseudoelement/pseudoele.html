@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-letter{
+            background-color: blueviolet;
+        }
+       
+        /* marker is use to change color of list li bullet or order list 123 also we dont provide elemnt in the marker because it is default */
+        ::marker{
+            color: chartreuse;
+        }
+        ::selection{
+            background-color: darkmagenta;
+        }
+        /*if we want user not to select content or data like copy pasting then we will use attribute called user-select:none */
+        p::after{
+            content: url(../fbiamge.png);
+        }
+        p::before{
+            content: url(../fbiamge.png);
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem temporibus amet minus illo aperiam nostrum hic enim aspernatur eum! Optio?</p>
+    
+        <li>hello</li>
+        <li>hii</li>
+        <li>bye</li>
+    </ul>
+    <ol>
+        <li>hello</li>
+        <li>hii</li>
+        <li>bye</li>
+    </ol>
+</body>
+</html>
