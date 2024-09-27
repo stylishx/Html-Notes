@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=VT323&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: Poppins;
+            background-color: #f3f3f3;
+        }
+        header{
+            height: 60px;
+            width:100%;
+            /* border: 1px solid red; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+        .circle {
+            /* border: 1px solid; */
+            background-color: #eea302;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;
+
+        }
+        .nicola{
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .editor {
+            font-size: 14px;
+            font-weight: 400;
+        }
+        .container,.container2 {
+            height: 40px;
+            width: 220px;
+            /* border: 1px solid green; */
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .container {
+            margin-left: 40px;
+        }
+        .container2 {
+            margin-right: 40px;
+        }
+        
+        .project {
+            font-size: 16px;
+            height: 30px;
+            width: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            text-align: center;
+            border-left: 1px solid;
+            border-right: 1px solid;
+        }
+        main {
+            /* border: 1px solid; */
+            height:550px;
+            width: 100%;
+            margin-top: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* background-color: #f3f3f3; */
+
+            
+        }
+        .firstcontainer {
+            /* border: 1px solid red; */
+            height: 300px;
+            width: 25%;
+            border-radius: 50%;
+    
+        }
+        img {
+            
+            height: 500px;
+            width:100%;
+            border-radius: 50%;
+            display: flex;
+            
+
+        }
+        .secondconatiner {
+            /* border: 1px solid red; */
+            height: 300px;
+            width: 20%;
+            margin-left:30px;
+
+        }
+        .hello {
+            font-size: 100px;
+            font-weight: 700;
+        }
+        .para1 {
+            font-weight: 700;
+    
+        }
+        .para2 {
+            line-height: 23px;
+            letter-spacing: 1px;
+            font-weight: 500;
+            margin-top: 10px;
+        }
+        section {
+            /* border: 1px solid; */
+            height: 200px;
+            width: 470px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: -80px;
+            margin-left: 960px;
+            
+            
+        }
+        .col1,.col2,.col3 {
+            border: 1px solid;
+            height: 135px;
+            width: 135px;
+            /* background-color: red; */
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* color: white; */
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .col1 {
+            background-color: #eea302;
+            transition-duration: 0.3s;
+            transition-property: all;
+            transition-timing-function: linear;
+        
+        }
+        .col1:hover {
+            background-color:#f3f3f3;
+            
+            
+        }
+        .col2 {
+            background-color:#ff3b25 ;
+            transition-duration: 0.3s;
+            transition-property: all;
+            transition-timing-function: linear;
+            
+        }
+        .col2:hover {
+            background-color:#f3f3f3;
+            
+            
+        }
+        .col3 {
+            background-color: #80d8da;
+            transition-duration: 0.3s;
+            transition-property: all;
+            transition-timing-function: linear;
+        }
+        .col3:hover {
+            background-color:#f3f3f3;
+        }
+
+        /* for animation part here */
+        main,.col1  {
+            animation-name: main11;
+            animation-duration: 1.5s;
+            animation-timing-function: linear; 
+            animation-fill-mode:backwards; 
+             /* animation-iteration-count: infinite; */
+        }
+        @keyframes main11 {
+            0%{
+                transform: translate(0,200px);
+                opacity: 0;
+                
+                
+            }
+            25%{
+                transform: translate(0,150px);
+                opacity: 0;
+                
+                
+            }
+            50%{
+                transform: translate(0,100px);
+                opacity: 0.2;
+            }
+            75%{
+                transform: translate(0,50px);
+                opacity: 0.4;
+             }
+             100%{
+                transform: translate(0,0);
+             }
+            
+        }
+        .col2,.col3 {
+            animation-name: colo1;
+            animation-timing-function: linear;
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+            }
+
+        @keyframes colo1 {
+            0% {
+                transform: translate(0 100px);
+                opacity: 0;
+            }
+            25% {
+                transform:translate(0,80px);
+                opacity: 0;
+            }
+            50% {
+                transform: translate(0,60);
+                opacity: 0.1;
+            }
+            75%{
+                transform: translate(0,40px);
+                opacity: 0.2;
+            }
+            
+            100%{
+                transform: translate(0,0);
+                opacity: 1;
+             }
+
+        }    
+
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="circle"></div>
+            <div class="nicola">Nicola Rider</div>
+            <div class="editor">Editor</div>
+        </div>
+
+     <div class="container2">
+        <div class="resume">Resume</div>
+        <div class="project">Project</div>
+        <div class="contact">Contact</div>
+    </div>
+    </header>
+    <main>
+        <div class="firstcontainer">
+            <div class="img1">
+                <img src="../Basic/kayi_clan.jpg" alt="">
+            </div>
+        </div>
+        
+        <div class="secondconatiner">
+            <div class="hello">Hello</div>
+            <div class="para1">A Bit About Me</div>
+            <div class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta id ad sapiente minima, vitae dignissimos aliquam consequatur reprehenderit corrupti accusantium quibusdam, eligendi laboriosam, eveniet aliquid accusamus animi temporibus! Maxime, id!</div>
+        </div>
+        
+    </main>
+    <section>
+        <div class="col1">Resume</div>
+        <div class="col2">Project</div>
+        <div class="col3">Contact</div>
+    </section>
+</body>
+</html>
